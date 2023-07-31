@@ -15,7 +15,7 @@ const Country = () => {
     if (!countries.flags) return <h1>Loading</h1>
     return(
         <div className="my-5 mx-5 text-sm w-[25rem] bg-slate-200 rounded-[10px] border-2 border-slate-500p-3 px-3 ">
-            <img className="w-50 rounded-[10px] pb-5 p-5" src={countries.flags.svg} alt="" />
+            <img className="w-50 rounded-[10px] pb-5 p-5" src={countries.flags.svg}/>
             <div className="px-6">{countries.name.common}</div>
             <div className="px-6 py-3">Capital: {countries.capital.map(item => <span key={item}>(item)</span>)}</div>
         </div>
